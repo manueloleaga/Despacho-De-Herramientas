@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name ="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name ="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name = "connection.url">jdbc:mysql://localhost/inventarioherramienta</property>
+		<property name = "connection.username">manuel</property>
+		<property name = "connection.password">123</property>
+		<property name = "hbm2ddl.auto">update</property>
+		<mapping class = "Modelo.Herramienta"></mapping>
+		<mapping class = "Modelo.Suplidor"></mapping>
+		<mapping class = "Modelo.Linea"></mapping>
+	</session-factory>
+</hibernate-configuration>
